@@ -1,8 +1,8 @@
 {
   "name": "storeway",
   "version": "1.0.0",
-  "description": "Landing Page for natours",
-  "main": "index.js",
+  "description": "Landing Page for storeway",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
@@ -18,7 +18,8 @@
     "dev-server": "^0.1.0",
     "devserver": "^0.2.5",
     "node-sass": "^4.14.1",
-    "postcss-cli": "^7.1.1"
+    "postcss-cli": "^7.1.1",
+    "seed":"~1.0.0"
   },
   "dependencies": {
     "axios": "^0.21.1",
