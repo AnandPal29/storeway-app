@@ -48,5 +48,8 @@ router.route('/:id')
 router.route('/updateProductImage/:id')
     .patch(upload.single('productImage'), productController.updateProductImage);
 
+router.route('/categories/:category')
+    .get(productController.getProductByCategory);
+
 
 module.exports = router;

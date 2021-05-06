@@ -34,6 +34,23 @@ exports.getProduct = catchAsync(async(req, res, next) => {
     });
 })
 
+exports.getProductByCategory = catchAsync(async(req, res, next) => {
+
+    const product = await Products.find({category: req.params.category});
+
+    if(!product) {
+        return next(new AppError(`No Product Found`, 404));
+    }
+    
+
+    res.status(200).json({
+        status:'success',
+        data: {
+            product
+        }
+    });
+})
+
 exports.createProduct = catchAsync(async (req, res, next) => {
     // console.log('Hello');
     // console.log(req.file);
