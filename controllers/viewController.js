@@ -87,3 +87,11 @@ exports.getSearchedUsers = catchAsync(async (req, res, next) => {
         users
     });
 })
+
+exports.getForgotPasswordScreen = catchAsync(async (req, res, next) => {
+    res.status(200).render('forgotPassword')
+})
+
+exports.getResetPasswordScreen = catchAsync(async (req, res, next) => {
+    res.status(200).render('resetPassword')
+})

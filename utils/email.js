@@ -13,7 +13,7 @@ const sendEmail = async options => {
     })
 
     const mailOptions = {
-        from: 'Gokart',
+        from: 'Storeway | Reset Password Token',
         to: options.email,
         subject: options.subject,
         text: options.message

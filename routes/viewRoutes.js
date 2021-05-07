@@ -17,5 +17,7 @@ route.get('/users', authController.protect, authController.restrictTo('admin'), 
 route.get('/userDetails/:userId', authController.protect, authController.restrictTo('admin'), viewController.getUserDetails);
 route.get('/deactivatedUsers', authController.protect, authController.restrictTo('admin'), viewController.getDeactiveUsers);
 route.get('/searchUser/:name', authController.protect, authController.restrictTo('admin'), viewController.getSearchedUsers);
+route.get('/forgotPassword',viewController.getForgotPasswordScreen);
+route.get('/resetPassword', viewController.getResetPasswordScreen);
 
 module.exports = route;
