@@ -10,6 +10,9 @@ const forgotPassword = async (email) => {
     
         if(res.data.status === 'success'){
             showAlert('success','Token Sent To Mail')
+            window.setTimeout(function(){
+                window.location.href='/resetPassword'
+            },2000)
         }
     }
     catch(err){
