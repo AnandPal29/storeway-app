@@ -1,8 +1,8 @@
 {
-  inStock: 999,
+  inStock: 996,
   hsnCode: '11223344',
   barcode: '112233445566',
-  unitSold: 1,
+  unitSold: 4,
   inOffer: true,
   isDeleted: false,
   _id: 607444e3de82231404f53b2d,
@@ -16,10 +16,10 @@
   __v: 0,
   id: '607444e3de82231404f53b2d'
 },{
-  inStock: 1000,
+  inStock: 986,
   hsnCode: '11223344',
   barcode: '112233445566',
-  unitSold: 0,
+  unitSold: 14,
   inOffer: false,
   isDeleted: false,
   _id: 6074451bde82231404f53b2e,
@@ -50,10 +50,10 @@
   __v: 0,
   id: '60744548de82231404f53b2f'
 },{
-  inStock: 1000,
+  inStock: 995,
   hsnCode: '11223344',
   barcode: '112233445566',
-  unitSold: 0,
+  unitSold: 5,
   inOffer: false,
   isDeleted: false,
   _id: 60744563de82231404f53b30,
@@ -339,10 +339,10 @@
   __v: 0,
   id: '60744794de82231404f53b41'
 },{
-  inStock: 1000,
+  inStock: 999,
   hsnCode: '11223344',
   barcode: '112233445566',
-  unitSold: 0,
+  unitSold: 1,
   inOffer: false,
   isDeleted: false,
   _id: 607447a7de82231404f53b42,
@@ -356,10 +356,10 @@
   __v: 0,
   id: '607447a7de82231404f53b42'
 },{
-  inStock: 1000,
+  inStock: 999,
   hsnCode: '11223344',
   barcode: '112233445566',
-  unitSold: 0,
+  unitSold: 1,
   inOffer: false,
   isDeleted: false,
   _id: 607447c0de82231404f53b43,
@@ -475,10 +475,10 @@
   __v: 0,
   id: '60744843de82231404f53b49'
 },{
-  inStock: 1000,
+  inStock: 999,
   hsnCode: '11223344',
   barcode: '112233445566',
-  unitSold: 0,
+  unitSold: 1,
   inOffer: false,
   isDeleted: false,
   _id: 6074485ade82231404f53b4a,
@@ -1291,10 +1291,10 @@
   __v: 0,
   id: '60744d9dde82231404f53b79'
 },{
-  inStock: 1000,
+  inStock: 999,
   hsnCode: '11223344',
   barcode: '112233445566',
-  unitSold: 0,
+  unitSold: 1,
   inOffer: false,
   isDeleted: false,
   _id: 60744dc9de82231404f53b7a,
@@ -1580,10 +1580,10 @@
   __v: 0,
   id: '60744f42de82231404f53b8a'
 },{
-  inStock: 1000,
+  inStock: 999,
   hsnCode: '11223344',
   barcode: '112233445566',
-  unitSold: 0,
+  unitSold: 1,
   inOffer: false,
   isDeleted: false,
   _id: 60744f53de82231404f53b8b,
@@ -1682,10 +1682,10 @@
   __v: 0,
   id: '60744fedde82231404f53b90'
 },{
-  inStock: 1000,
+  inStock: 999,
   hsnCode: '11223344',
   barcode: '112233445566',
-  unitSold: 0,
+  unitSold: 1,
   inOffer: false,
   isDeleted: false,
   _id: 60745001de82231404f53b91,
@@ -1699,10 +1699,10 @@
   __v: 0,
   id: '60745001de82231404f53b91'
 },{
-  inStock: 1000,
+  inStock: 999,
   hsnCode: '11223344',
   barcode: '112233445566',
-  unitSold: 0,
+  unitSold: 1,
   inOffer: false,
   isDeleted: false,
   _id: 60745016de82231404f53b92,
@@ -1750,10 +1750,10 @@
   __v: 0,
   id: '6074503ade82231404f53b94'
 },{
-  inStock: 1000,
+  inStock: 999,
   hsnCode: '11223344',
   barcode: '112233445566',
-  unitSold: 0,
+  unitSold: 1,
   inOffer: true,
   isDeleted: false,
   _id: 6074504fde82231404f53b95,
@@ -1767,10 +1767,10 @@
   __v: 0,
   id: '6074504fde82231404f53b95'
 },{
-  inStock: 1000,
+  inStock: 996,
   hsnCode: '11223344',
   barcode: '8992696415409',
-  unitSold: 0,
+  unitSold: 4,
   inOffer: false,
   isDeleted: false,
   _id: 608ba01d5dc9d80015249796,

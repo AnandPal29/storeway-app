@@ -4,6 +4,7 @@ const Cart = require('./../models/cartModel');
 const catchAsync = require('./../utils/catchAsync');
 const AppError = require('./../utils/appError');
 const Products = require('../models/productModel');
+const sendEmail = require('./../utils/email');
 
 exports.placeOrder = catchAsync(async (req, res, next) => {
 
@@ -70,6 +71,36 @@ exports.placeOrder = catchAsync(async (req, res, next) => {
         await Products.findByIdAndUpdate(ProductId, {$inc: {inStock: -ProductQuantity, unitSold: +ProductQuantity}});
     });
 
+    let text;
+    let count = 0;
+    text = "Order Id:" + order._id + "\n";
+    cart.products.forEach(async (ele) => {
+        //console.log("Name: "+ele.item.name + " Quantity:" + ele.quantity + " Price: " + ele.item.price);
+        if(text){
+            count = count + 1;
+            text = text + "\n" + count+ ". Name: "+ele.item.name + " Quantity:" + ele.quantity + " Price: " + ele.item.price;
+        }
+        else{
+            count = count + 1;
+            text = count + ". Name: "+ele.item.name + " Quantity:" + ele.quantity + " Price: " + ele.item.price;
+        }
+    });
+    text = text + "\n" + "Total Price: " + cart.totalPrice;
+    text = text + "\n" + "Total Quantity: " + cart.totalQuantity;
+   
+    const message = text;
+    try {
+        await sendEmail({
+        email: userDetails.email,
+        subject: 'Shopping SuccessFull! Your Shopping Details for Order ID ' + order._id,
+        message
+        });
+    } catch (err) {
+        return next(
+        new AppError('There was an error sending the email. Try again later!'),
+        500
+        );
+    }
     cart = await Cart.findOneAndUpdate({userId: req.user.id}, {products: [], totalPrice:0, totalQuantity:0}, {new: true, runValidators:true});
     // console.log(cart);
 
