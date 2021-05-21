@@ -25,6 +25,7 @@ document.querySelector('.updateBtn').addEventListener('click', e=> {
     const unit = document.getElementById('unit').value;
     const category = document.getElementById('category').value;
     const inStock = document.getElementById('inStock').value;
+    const barcode = document.getElementById('barcode').value;
    
     const data = {};
     data.name = name;
@@ -34,6 +35,7 @@ document.querySelector('.updateBtn').addEventListener('click', e=> {
     data.unit = unit;
     data.category = category;
     data.inStock = inStock;
+    data.barcode = barcode;
     updateProduct(data, productId);
 })
 
