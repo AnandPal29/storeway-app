@@ -62,6 +62,9 @@ include _header
         label(for='inStock') In Stock
         input#inStock(type='text' value=`${product.inStock}`)
       .form__group
+        label(for='barcode') Bar Code
+        input#barcode(type='text' value=`${product.barcode}`)
+      .form__group
         button.btn.updateBtn Update
         button.btn.deleteBtn Delete
 script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js')      

@@ -28,6 +28,8 @@ document.querySelector('.createProductForm').addEventListener('submit', e => {
     form.append('unit', document.getElementById('unit').value);
     form.append('category', document.getElementById('category').value);
     form.append('inStock', document.getElementById('inStock').value);
+    form.append('barcode', document.getElementById('barcode').value);
     form.append('productImage', document.getElementById('productImage').files[0]);
+   
     createProduct(form, 'data');
 });
